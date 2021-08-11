@@ -8,6 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class RegisterComponent  {
 
+  //form components
   hide = true;
   title = 'demoApp';
   email!: string;
