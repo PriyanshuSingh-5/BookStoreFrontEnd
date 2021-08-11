@@ -1,0 +1,64 @@
+<div class="container" fxLayoutAlign="center center">
+  <!-- class="center-content" -->
+  <div class="media"> 
+  <div class="img">
+    <img src="../../../assets/Cart.png" alt="Sample photo" class="media"> 
+    <h4 style="text-align:center"> ONLINE BOOK SHOPPING </h4>
+  </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Login/Register</mat-card-title>
+       
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="Login">
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+              <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'"[attr.aria-pressed]="hide">
+              <mat-icon style="color:black;" matSuffix>{{hide ? "visibility_off" : "visibility"}}</mat-icon>
+            </button>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="login()">Login</button>
+          </mat-tab>
+          <mat-tab label="Register">
+            <mat-form-field appearance="outline">
+              <mat-label>FullName</mat-label>
+              <input type="email" matInput placeholder="FullName" value="" [(ngModel)]="remail">
+              <mat-icon matSuffix>full</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="remail">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="rpassword">
+              <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'"[attr.aria-pressed]="hide">
+                <mat-icon style="color:black;" matSuffix>{{hide ? "visibility_off" : "visibility"}}</mat-icon>
+              </button>
+              
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>Mobile Number</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="rcpassword">
+              
+            </mat-form-field>
+            <button mat-button color="primary" (click)="register()">Register</button>
+          </mat-tab>
+        </mat-tab-group>
+  
+      </mat-card-content>
+  
+    </mat-card>
+  </div>
+  
