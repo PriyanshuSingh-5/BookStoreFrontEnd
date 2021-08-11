@@ -8,6 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ForgotpasswordComponent  {
 
+  //form
   hide = true;
   title = 'demoApp';
  
