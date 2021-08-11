@@ -1,0 +1,48 @@
+<div style="width: 100%; height: 100%;">
+    <mat-toolbar class="tool" fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="titleText" fxLayout="row" fxLayoutGap="2%">
+        <img src="../../../assets/Book.png" />
+        <a  matTooltip="user Dashboard" style="color: white;">BookStore</a>
+        </div>
+
+        </mat-toolbar>
+        <div class="container" fxLayoutAlign="center center">
+            <span style="text-align:center">Add Book Form </span>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Title</mat-label>
+                      <input required matInput placeholder="Title" value="" [(ngModel)]="email">
+                      
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Author</mat-label>
+                        <input required matInput placeholder="Author" value="" [(ngModel)]="email">
+                        
+                      </mat-form-field>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Amount</mat-label>
+                        <input required matInput placeholder="Amount"type="number" value="" [(ngModel)]="email">
+                        
+                      </mat-form-field>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Quantity</mat-label>
+                        <input required matInput placeholder="Quantity" type="number" value="" [(ngModel)]="email">
+                        
+                      </mat-form-field>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Description</mat-label>
+                        <input required matInput placeholder="Description" value="" [(ngModel)]="email">
+                        
+                      </mat-form-field>
+                      
+                      <div fxLayout="column">
+                        <input class="fileButton"type="file"autocomplete="off"/>
+          
+                    
+                    
+                    <button mat-button color="primary" (click)="reset()">Add Book</button>
+                 
+            
+              <!-- </mat-card-content>
+        </mat-card> -->
+</div>
+</div>

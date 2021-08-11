@@ -26,12 +26,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatBadgeModule} from '@angular/material/badge';
 import { RegisterComponent } from './Pages/register/register.component';
+import { ForgotpasswordComponent } from './Components/forgotpassword/forgotpassword.component';
+import { ResetpasswordComponent } from './Components/resetpassword/resetpassword.component';
+import { AddbookComponent } from './Components/addbook/addbook.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
+    ForgotpasswordComponent,
+    ResetpasswordComponent,
+    AddbookComponent,
     
     
   ],
