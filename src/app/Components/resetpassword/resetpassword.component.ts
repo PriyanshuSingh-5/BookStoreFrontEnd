@@ -8,10 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ResetpasswordComponent  {
 
-  // constructor() { }
-
-  // ngOnInit(): void {
-  // }
+  
   hide = true;
   title = 'demoApp';
  
