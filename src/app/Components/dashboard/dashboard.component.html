@@ -1,0 +1,55 @@
+   <div style="width: 100%; height: 100%;">
+    <mat-toolbar class="tool" fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="titleText" fxLayout="row" fxLayoutGap="2%">
+        <img src="../../../assets/Book.png" />
+        <a style="color: white;">BookStore</a>
+        </div>
+      <mat-card class="search-mat-card" fxLayout="row"fxLayoutAlign="space-around center" >
+            <button mat-icon-button  >
+              <mat-icon class="searchIcon">search</mat-icon>
+            </button>
+            <input  class="searchInput" type="text" placeholder="Search.."/>
+          </mat-card>
+    <button class="cart" mat-icon-button  matTooltip="Cart">Cart<mat-icon >shopping_cart</mat-icon></button>
+    <button class="Menu" mat-button [matMenuTriggerFor]="menu" >Profile
+    <mat-icon class="searchIcon">perm_identity</mat-icon></button> 
+    <mat-menu #menu="matMenu">
+      <h3 style="text-align:center">Welcome!</h3>
+      <p>To access account and manage orders</p>
+      <button mat-menu-item >
+        <div style="text-align:center">
+          <button mat-button class="login" [routerLink]="['/register']">Login/Register</button>
+         </div>
+      </button>
+      
+      <mat-divider></mat-divider>
+      <button style="text-align:center" mat-menu-item>MyOrders
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <button style="text-align:center" mat-menu-item>Wishlist
+        <mat-icon>favorite</mat-icon>
+      </button>
+      
+
+
+        
+  </mat-menu>
+  </mat-toolbar>
+    <router-outlet></router-outlet>
+
+        
+        <!-- <button class="Profile" mat-icon-button  matTooltip="Profile"> 
+        <a class="nav-link"
+                   [routerLink]="['/register']"
+                   routerLinkActive="active">Register</a></button>
+
+                   <button class="Profile" mat-icon-button  matTooltip="Profile"> 
+       <a class="nav-link"
+       [routerLink]="['/addbook']"
+      routerLinkActive="active">AddBook</a></button> -->
+        <!-- </mat-toolbar>  -->
+
+        
+        <div class="footer">
+          Copyright &copy; 2021 Bookstore Private Limited All Rights Reserved
+        </div>

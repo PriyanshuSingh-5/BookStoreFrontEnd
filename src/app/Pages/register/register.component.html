@@ -28,6 +28,9 @@
             </button>
             </mat-form-field>
             <button mat-button color="primary" (click)="login()">Login</button>
+            <div>
+              <button mat-button  [routerLink]="['/forgotpassword']">forgot password?</button>
+             </div>
           </mat-tab>
           <mat-tab label="Register">
             <mat-form-field appearance="outline">
@@ -57,10 +60,10 @@
             <button mat-button color="primary" (click)="register()">Register</button>
           </mat-tab>
         </mat-tab-group>
-        <div>
+        <!-- <div>
           <button mat-button  [routerLink]="['/forgotpassword']">forgot password?</button>
-          <!-- <button mat-raised-button type="submit" (click)="login()">Next</button> -->
-         </div>
+         
+         </div> -->
   
       </mat-card-content>
   

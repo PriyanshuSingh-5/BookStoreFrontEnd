@@ -1,0 +1,150 @@
+.containerCart { 
+    border:1px solid #DCDCDC;
+      padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    margin-left:12%;
+    margin-right:27.5%;
+    margin-bottom: 10px;
+    .cart { 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+         
+  
+          mat-form-field { 
+        display: flex;
+              
+          }
+      }
+    }
+    
+    
+            
+          .book-description { 
+            padding-left:20px;
+            h2 { 
+              margin-bottom: 2px;
+            }
+        
+            p { 
+              margin-bottom: 2px;
+            }
+        
+            
+        
+            .price-container { 
+              .dicounted-price { 
+                margin-top: 10px;
+                font-size: large;
+              }
+              .actual-price {
+                margin-top: 10px;
+                margin-left: 5px; 
+                text-decoration: line-through;
+                color: gray;
+              }
+            }
+          }
+            
+        
+    
+    
+    .containerCustomerDetails { 
+        // border:1px solid #DCDCDC;
+        //   padding: 10px 20px 10px 20px;
+        // margin-top: 30px;
+        // margin-left:150px;
+        // margin-right:350px;
+        // margin-bottom: 10px;
+        // width: auto;
+        border:1px solid #DCDCDC;
+      padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    margin-left:12%;
+    margin-right:27.5%;
+    margin-bottom: 10px;
+    height:600px;
+          .customer-details { 
+          display: flex;
+          justify-content: space-between;
+              
+          }
+        }
+        .input { 
+            margin-left: 20px;
+                .person { 
+              display: flex;
+                    .full-name-container { 
+                display: flex;
+                flex-direction: column;
+                       
+        
+                    }
+                }
+            }
+            .mobile-container { 
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+        
+                    }
+                    .address-container { 
+                      margin-top: 20px;
+                      display: flex;
+                      flex-direction: column;
+                    }
+                    .address-details{ 
+                      margin-top: 20px;
+                      display: flex;
+                      flex-direction: row;
+                      
+                      .city { 
+                        display: flex;
+                        flex-direction:column;
+                      }
+                    }
+                    .State { 
+                      display: flex;
+                      flex-direction:column;
+                      margin-left: 20px;
+                    }
+
+                    .type-container { 
+                      margin-top: 20px;
+                      display: flex;
+                      flex-direction: column;
+                      span { 
+                        margin-right: 20px;
+                      }
+                    }
+                    #home { 
+                      margin-left: 0px;
+                    } 
+              
+                    #work { 
+                      margin-left: 80px;
+                    }
+              
+                    #other { 
+                      margin-left: 80px;
+                    }   
+
+                    .continue{
+                      margin-left: 800px;
+                      background-color: royalblue;
+                      color:white;
+                    }
+                    .cart-container { 
+                      border:1px solid #DCDCDC;
+                      padding: 10px 20px 10px 20px;
+                      margin-top: 30px;
+                      margin-left:12%;
+                      margin-right:27.5%;
+                      margin-bottom: 10px;
+                      height:400px;
+                      .cart-header { 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                      }
+                    }

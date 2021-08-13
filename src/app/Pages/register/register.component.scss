@@ -42,11 +42,11 @@ opacity: 1;
     border: 1px solid #DADCE0;
     border-radius: 7px;
     width: 800px;
-    padding: 200px;
+    padding: 100px;
     margin: auto;
-    margin-top: 85px;
+    //margin-top: 85px;
     height: auto;
-    min-height: 550px;
+//@at-root: 150px;
     align-content: center;
     background-color: whitesmoke;
   }
@@ -95,3 +95,8 @@ opacity: 1;
     height: 40px;
     background-color:rgb(155, 6, 6);
   }
+
+  // h4{
+  //   font-size:20px;
+  //   font-family: Trebuchet MS, sans-serif;
+  // }

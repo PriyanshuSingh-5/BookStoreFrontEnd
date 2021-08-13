@@ -29,6 +29,11 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { ForgotpasswordComponent } from './Components/forgotpassword/forgotpassword.component';
 import { ResetpasswordComponent } from './Components/resetpassword/resetpassword.component';
 import { AddbookComponent } from './Components/addbook/addbook.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { BookDetailsComponent } from './Components/book-details/book-details.component';
+import { CartComponent } from './Components/cart/cart.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -38,6 +43,9 @@ import { AddbookComponent } from './Components/addbook/addbook.component';
     ForgotpasswordComponent,
     ResetpasswordComponent,
     AddbookComponent,
+    DashboardComponent,
+    BookDetailsComponent,
+    CartComponent,
     
     
   ],
@@ -47,7 +55,7 @@ import { AddbookComponent } from './Components/addbook/addbook.component';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-   
+    MatDividerModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
@@ -58,7 +66,7 @@ import { AddbookComponent } from './Components/addbook/addbook.component';
     MatTabsModule,
     HttpClientModule,
     MatButtonModule,
-    
+    MatMenuModule,
     MatButtonToggleModule,
     
     MatToolbarModule,
