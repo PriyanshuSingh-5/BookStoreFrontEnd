@@ -3,21 +3,52 @@
   <div class="cart">
     <h2>My Cart (1)</h2>
    
+     
+      <mat-form-field appearance="outline">
+        <mat-label>Location</mat-label>
+        <mat-select>
+          <mat-option value="bz">Bridgelabz</mat-option>
+          <mat-option value="cn">Chennai</mat-option>
+          <mat-option value="mh">Mumbai</mat-option>
+        </mat-select>
+      </mat-form-field>
+ 
+
   </div>
+  <div class="cartInformation">
     <div class="image">
       <img src="../../../assets/Book1.png" alt="">
-    </div>
-    
+      </div>
+      <div class="Description">
       <div class="book-description">
-        <h2>Bookname</h2>
+      <h2>Bookname</h2>
+      <p> Bookauthor</p>
+      <div class="price" fxLayout="row">
+          <p>Price</p>
+    </div>
+   
+      <!-- <div class="book-description"> -->
+        <!-- <h2>Bookname</h2>
         <p> Bookauthor</p>
         <div class="price" fxLayout="row">
-            <p>Price</p>
+            <p>Price</p> -->
+            <button mat-mini-fab class="button-minus" fxLayoutAlign="center start">
+            <mat-icon fxLayoutAlign="center center"style="color: black; font-size:small ;" >remove</mat-icon></button>
+           
+            <input mat-input type="number"class="quantity-field"/>
+               
+                <button mat-mini-fab class="button-minus" fxLayoutAlign="center start">
+                <mat-icon fxLayoutAlign="center center" 
+                style="color: black; font-size: small;" >add</mat-icon>
+            </button>
+            <button mat-button class="Remove">Remove</button>
+            
           </div>
-          <div class="remove">
-        Remove
-      </div>
+          <div class="removecontainer">
+          <!-- <button mat-button class="Remove">Remove</button> -->
+          </div>
         </div>
+        
       </div>
      
     </div>
@@ -30,24 +61,16 @@
         </div>
         <div class="input">
           <div class="person">
-            <div class="full-name-container">
+            <div class="fullNameContainer">
               <span>Full Name</span>
-              <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
-                <input required matInput placeholder="Title" value="" >
-                
-              </mat-form-field>
+              <input type="text" class="text-input">
             </div>
-            <div class="mobile-container">
+            <div class="mobile">
               <span>Mobile Number</span>
-              <mat-form-field appearance="outline">
-                <mat-label>MobileNumber</mat-label>
-                <input required matInput placeholder="Title" value="" >
-                
-              </mat-form-field>
+              <input type="text" class="text-input">
             </div>
           </div>
-            <div class="address-container">
+            <div class="address">
               <span>Address</span>
               <textarea name=""  class="text-input"></textarea>
             </div>
@@ -56,23 +79,16 @@
           <div class="address-details">
             <div class="city">
               <span>City</span>
-              <mat-form-field appearance="outline">
-                <mat-label>City</mat-label>
-                <input required matInput placeholder="Title" value="" >
-                
-              </mat-form-field>
+              <input type="text" class="text-input">
             </div>
             <div class="State">
               <span>State</span>
-              <mat-form-field appearance="outline">
-                <mat-label>State</mat-label>
-                <input required matInput placeholder="Title" value="" >
-              </mat-form-field>
+              <input type="text" class="text-input">
             </div>
           </div>
-          <div class="type-container">
+          <div class="type">
             <span>Type</span>
-            <div class="radio-buttons-container">
+            <div class="radioButtons">
               <input type="radio" name="type" id="home">
             <label for="home">Home</label>
             <input type="radio" name="type" id="work">
@@ -86,7 +102,23 @@
             </div>
           </div>
       </div>
-            <div class="cart-container">
+            <div class="cartSummary">
               <div class="cart-header">
                 <h2>Order Summary</h2>
+                
+                  </div>
+                  <div class="cartInformation">
+                    <div class="image">
+                      <img src="../../../assets/Book1.png" alt="">
+                      </div>
+                      <div class="Description">
+                      <div class="book-description">
+                      <h2>Bookname</h2>
+                      <p> Bookauthor</p>
+                      <div class="price" fxLayout="row">
+                          <p>Price</p>
+                          <div class="customer-details-footer">
+              
+                            <button mat-stroked-button class="Checkout">Checkout</button>
+                          </div>
               </div>

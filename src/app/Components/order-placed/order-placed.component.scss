@@ -1,0 +1,83 @@
+.container{
+  margin-top: 40px;
+  margin-left:350px;
+  margin-right: 350px;
+  height: 800px;
+  .orderPlaced{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    .order { 
+
+      .orderInfo { 
+        width:250px;
+        p{
+          margin-bottom: 0px;
+        }
+        // .image{
+        //   display: flex;
+        //   justify-content:center;
+        //   align-items: center;
+        // }
+      }
+    }
+  }
+  
+  .contactcontainer { 
+       margin-top: 30px;
+       border: 1px solid #DCDCDC;
+    .contact { 
+      display: flex;
+      flex-direction: row;
+      background-color: #FAFAFA;
+      height: 30px;
+      text-align: center;
+     // justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #DCDCDC;
+      .email-us { 
+         margin-left: 70px;
+      }
+  
+      .contact-us { 
+        margin-left: 200px;
+      }
+  
+      .address { 
+        margin-left: 250px;
+      }
+    }
+  
+    .contactData { 
+
+      display: flex;
+      height:150px;
+      .emaildata { 
+        border-right: 1px solid #DCDCDC;
+        padding:20px;
+        margin-left: 10px;
+      }
+  
+      .contactdata { 
+        border-right: 1px solid #DCDCDC;
+        padding: 20px;
+        width: 350px;
+        margin-left: 80px;
+      }
+  
+      
+    }
+  }
+  
+  .button-container { 
+    display: flex;
+    justify-content: center;
+  margin-top: 30px;
+   
+  }
+}
+.continue{
+  background-color: #3371B5;
+  color:white;
+}

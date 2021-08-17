@@ -10,7 +10,7 @@
             </button>
             <input  class="searchInput" type="text" placeholder="Search.."/>
           </mat-card>
-    <button class="cart" mat-icon-button  matTooltip="Cart">Cart<mat-icon >shopping_cart</mat-icon></button>
+    <button class="cart" mat-icon-button  [routerLink]="['/cart']" matTooltip="Cart">Cart<mat-icon >shopping_cart</mat-icon></button>
     <button class="Menu" mat-button [matMenuTriggerFor]="menu" >Profile
     <mat-icon class="searchIcon">perm_identity</mat-icon></button> 
     <mat-menu #menu="matMenu">
@@ -23,16 +23,21 @@
       </button>
       
       <mat-divider></mat-divider>
-      <button style="text-align:center" mat-menu-item>MyOrders
+      <div style="text-align:center">
+      <button  mat-button class="Orders" [routerLink]="['/orders']">MyOrders
         <mat-icon>shopping_cart</mat-icon>
+     
       </button>
-      <button style="text-align:center" mat-menu-item>Wishlist
-        <mat-icon>favorite</mat-icon>
-      </button>
+
+      <div style="text-align:center">
+        <button  mat-button class="Orders" [routerLink]="['/wishlist']">MyWishlist
+          <mat-icon>favorite</mat-icon>
+       
+        </button>
       
 
-
-        
+      </div>
+      </div> 
   </mat-menu>
   </mat-toolbar>
     <router-outlet></router-outlet>

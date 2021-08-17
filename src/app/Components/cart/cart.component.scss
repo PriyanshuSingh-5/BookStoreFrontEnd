@@ -18,37 +18,32 @@
       }
     }
     
+    .button-minus{
+      color:whitesmoke;
+      background-color:whitesmoke;
+      
+      width: 30px;
+      height: 30px;
+      line-height: 16px;
+  }
+  .number{
+    width:auto;
+  }
+  .quantity-field{
+    width:25px;
+
+  }
+
+  // .Remove{
+    // background-color: royalblue;
+    //border-color: red;
+     //color:white;
+  //}
     
-            
-          .book-description { 
-            padding-left:20px;
-            h2 { 
-              margin-bottom: 2px;
-            }
-        
-            p { 
-              margin-bottom: 2px;
-            }
-        
-            
-        
-            .price-container { 
-              .dicounted-price { 
-                margin-top: 10px;
-                font-size: large;
-              }
-              .actual-price {
-                margin-top: 10px;
-                margin-left: 5px; 
-                text-decoration: line-through;
-                color: gray;
-              }
-            }
-          }
-            
-        
-    
-    
+//  .book-description
+//  {
+//  // margin-left: 20px;
+//  }    
     .containerCustomerDetails { 
         // border:1px solid #DCDCDC;
         //   padding: 10px 20px 10px 20px;
@@ -57,13 +52,13 @@
         // margin-right:350px;
         // margin-bottom: 10px;
         // width: auto;
-        border:1px solid #DCDCDC;
-      padding: 10px 20px 10px 20px;
+    border:1px solid #DCDCDC;
+    padding: 10px 20px 10px 20px;
     margin-top: 30px;
     margin-left:12%;
     margin-right:27.5%;
     margin-bottom: 10px;
-    height:600px;
+    height:400px;
           .customer-details { 
           display: flex;
           justify-content: space-between;
@@ -74,7 +69,7 @@
             margin-left: 20px;
                 .person { 
               display: flex;
-                    .full-name-container { 
+                    .fullNameContainer { 
                 display: flex;
                 flex-direction: column;
                        
@@ -82,19 +77,20 @@
                     }
                 }
             }
-            .mobile-container { 
+            .mobile { 
                 display: flex;
                 flex-direction: column;
                 margin-left: 20px;
         
                     }
-                    .address-container { 
+                    .address { 
                       margin-top: 20px;
                       display: flex;
                       flex-direction: column;
                     }
                     .address-details{ 
                       margin-top: 20px;
+                      margin-left: 20px;
                       display: flex;
                       flex-direction: row;
                       
@@ -109,9 +105,10 @@
                       margin-left: 20px;
                     }
 
-                    .type-container { 
+                    .type { 
                       margin-top: 20px;
                       display: flex;
+                      margin-left: 20px;
                       flex-direction: column;
                       span { 
                         margin-right: 20px;
@@ -131,11 +128,11 @@
 
                     
                     .continue{
-                      margin-left: 800px;
+                      margin-left: 700px;
                       background-color: royalblue;
                       color:white;
                     }
-                    .cart-container { 
+                    .cartSummary { 
                       border:1px solid #DCDCDC;
                       padding: 10px 20px 10px 20px;
                       margin-top: 30px;
@@ -149,3 +146,55 @@
                         justify-content: space-between;
                       }
                     }
+
+//   .image{
+//   top: 188px;
+// left: 213px;
+// width: 236px;
+// height: 89px;
+// opacity: 1;
+//                     }
+
+// .image{
+ 
+// }
+.cartInformation { 
+  display: flex;
+}
+
+.Description { 
+  margin-left: 20px;
+  .book-description { 
+    padding-left:20px;
+    h2 { 
+      margin-bottom: 2px;
+    }
+
+    p { 
+      margin-bottom: 2px;
+    }
+
+    
+
+    // .price-container { 
+    //   .dicounted-price { 
+    //     margin-top: 10px;
+    //     font-size: large;
+    //   }
+    // }
+  }
+}
+.removecontainer
+{ 
+  margin-left: 30px;
+  cursor: pointer;
+}
+.Checkout{
+  margin-left: 600px;
+  background-color: royalblue;
+  color:white;
+}
+//.fullNameContainer{
+ // width:20px;
+ //height:25px;
+//}

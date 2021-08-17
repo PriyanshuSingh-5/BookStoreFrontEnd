@@ -34,7 +34,11 @@ import { BookDetailsComponent } from './Components/book-details/book-details.com
 import { CartComponent } from './Components/cart/cart.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
-
+import { BookdisplayComponent } from './Components/bookdisplay/bookdisplay.component';
+import { OrdersComponent } from './Components/orders/orders.component';
+import { WishlistComponent } from './Components/wishlist/wishlist.component';
+import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -46,6 +50,10 @@ import {MatDividerModule} from '@angular/material/divider';
     DashboardComponent,
     BookDetailsComponent,
     CartComponent,
+    BookdisplayComponent,
+    OrdersComponent,
+    WishlistComponent,
+    OrderPlacedComponent,
     
     
   ],
@@ -68,7 +76,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatMenuModule,
     MatButtonToggleModule,
-    
+    MatSelectModule,
     MatToolbarModule,
     MatSnackBarModule,
     MatRadioModule,
