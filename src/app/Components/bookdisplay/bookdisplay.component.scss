@@ -1,0 +1,117 @@
+
+  .container{
+    //display: flex;
+    padding:10px;
+    margin-left: 100px;
+    margin-right:100px;
+    flex-wrap: wrap;
+  }
+  .books{
+    font-size: x-large;
+  }
+  .bookscontainer{
+    display: flex;
+   // flex-wrap: wrap;
+   
+  }
+  .booksList{
+    display:flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+  }
+//   .sort{
+//       margin-left: 1000px;
+//       font-size: auto;
+//       color: red;
+//   }
+.sorting{
+    display:inline-flex;
+}
+.heading{
+    display:inline-flex;
+    //margin-left: 100px;
+}
+  .sorting{
+    margin-left: 1000px;
+    font-size: auto;
+  }
+  .book { 
+    cursor: pointer;
+    margin:10px;
+    width:200px;
+    border:1px solid #E2E2E2;
+      .image { 
+      padding-top:20px;
+      padding-bottom: 17px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      background-color:#F5F5F5;
+      //width:200px;
+          img { 
+  
+          }
+      }
+  
+      .bookDescription { 
+      cursor: pointer;
+      padding-left:20px;
+          h2 { 
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        margin-bottom: 2px;
+          }
+        // .mat-icon {
+//     vertical-align: middle;
+//   }
+//   .mat-form-field-wrapper {
+//     background-color: white !important;
+//   }
+          p { 
+        margin-bottom: 2px;
+          }
+  
+          .books{
+            width: 200px;
+          height: 135px;
+          }
+          .ratingContainer { 
+        
+              .rating { 
+          display: flex;
+          justify-content: center;
+         // align-content: center; 
+         // text-align: center; 
+          background-color: #388E3C;
+          border-radius: 1px;
+          width:50px;
+          padding:2px;
+          color:white;
+          .star{
+            font-size: large;
+           // vertical-align: middle !important;
+          }
+              }
+  
+              
+        //   margin-top: 5px;
+        //   margin-left: 5px;
+        //   color:gray;
+             
+          }
+  
+          .pricecontainer { 
+             
+        //   margin-top: 10px;
+        //   font-size: large;
+              
+              .price {
+          margin-top: 10px;
+          margin-left: 5px; 
+          //text-decoration: line-through;
+          color: gray;
+              }
+          }
+      }
+  }

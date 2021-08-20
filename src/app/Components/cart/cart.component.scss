@@ -2,7 +2,7 @@
     border:1px solid #DCDCDC;
       padding: 10px 20px 10px 20px;
     margin-top: 30px;
-    margin-left:12%;
+    margin-left:20%;
     margin-right:27.5%;
     margin-bottom: 10px;
     .cart { 
@@ -21,19 +21,51 @@
     .button-minus{
       color:whitesmoke;
       background-color:whitesmoke;
-      
-      width: 30px;
-      height: 30px;
+      //top: 100px;
+//left: 100px;
+//padding:15px;
+width: 30px;
+height: 30px;
+justify-content: space-between;
+      // width: 30px;
+      // height: 30px;
       line-height: 16px;
   }
-  .number{
-    width:auto;
+  .button-add{
+    color:whitesmoke;
+    background-color:whitesmoke;
+    width: 30px;
+    height: 30px;
   }
+  // .number{
+  //   width:auto;
+  // }
   .quantity-field{
-    width:25px;
+    // width:25px;
+    // height: 30px;
+    line-height: 16px;
+    text-align: center;
+    padding:15px 5px 5px;
+    //top: 100px;
+    //left: 100px;
+    width: 10px;
+    height: 5px;
+    // display:flex;
+    // align-self: center;
 
   }
-
+  .profile-circle-container{
+   // margin-right: 10px;
+    .profile-circle { 
+      margin-top: 7px;
+      background-color: #F5F5F5;
+      color:#707070;
+      border-radius: 50px;
+      border:1px solid #707070;
+      padding:2px;
+      width: 20px;
+    }
+  }
   // .Remove{
     // background-color: royalblue;
     //border-color: red;
@@ -55,7 +87,7 @@
     border:1px solid #DCDCDC;
     padding: 10px 20px 10px 20px;
     margin-top: 30px;
-    margin-left:12%;
+    margin-left:20%;
     margin-right:27.5%;
     margin-bottom: 10px;
     height:400px;
@@ -128,7 +160,7 @@
 
                     
                     .continue{
-                      margin-left: 700px;
+                      margin-left: 600px;
                       background-color: royalblue;
                       color:white;
                     }
@@ -136,7 +168,7 @@
                       border:1px solid #DCDCDC;
                       padding: 10px 20px 10px 20px;
                       margin-top: 30px;
-                      margin-left:12%;
+                      margin-left:20%;
                       margin-right:27.5%;
                       margin-bottom: 10px;
                       height:400px;
@@ -190,7 +222,7 @@
   cursor: pointer;
 }
 .Checkout{
-  margin-left: 600px;
+  margin-left: 500px;
   background-color: royalblue;
   color:white;
 }
@@ -198,3 +230,27 @@
  // width:20px;
  //height:25px;
 //}
+// .increase-quantity { 
+//   margin-top:10px;
+//   display: flex;
+//   align-items: center;
+//   .decrease-button { 
+//    // @include addSubtract();
+//   }
+
+//   .input-quantity { 
+//     width: 30px;
+//     height:30px;
+//     text-align: center;
+//     border:1px solid #DCDCDC;
+//   }
+
+//   .increase-button { 
+//    // @include addSubtract();
+//   }
+
+//   .remove-container { 
+//     margin-left: 10px;
+//     cursor: pointer;
+//   }
+// }

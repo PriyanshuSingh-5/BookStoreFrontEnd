@@ -31,7 +31,8 @@ const routes: Routes = [
      {path: 'wishlist', component: WishlistComponent},
      {path: 'bookdisplay', component: BookdisplayComponent},
      {path: 'bookdetails', component: BookDetailsComponent},
-     {path: 'orderplaced', component: OrderPlacedComponent}
+     {path: 'orderplaced', component: OrderPlacedComponent},
+     {path: 'bookdisplay', component: BookdisplayComponent}
       
     ]
 
@@ -41,7 +42,9 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -10,22 +10,21 @@
       <mat-card-header>
         <mat-card-title>Login/Register</mat-card-title>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content>s
         <mat-tab-group>
           <mat-tab label="Login">
             <!-- form content -->
-            <mat-form-field appearance="outline">
-              <mat-label>Email</mat-label>
-              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
-              <mat-icon matSuffix>email</mat-icon>
-            </mat-form-field>
+            <p>Full Name</p>
+                <mat-form-field appearance="outline" class="noWrapper" >
+                  <input matInput placeholder="" formControlName="fullname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fullname.errors }"/>
+                  <mat-hint *ngIf="submitted && f.fullname.errors">Enter your full name</mat-hint>
+                </mat-form-field>
   
+            <p>Password</p>
             <mat-form-field appearance="outline">
-              <mat-label>Password</mat-label>
-              <input type="password" matInput placeholder="Password" [(ngModel)]="password">
-              <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'"[attr.aria-pressed]="hide">
-              <mat-icon style="color:black;" matSuffix>{{hide ? "visibility_off" : "visibility"}}</mat-icon>
-            </button>
+              <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              <mat-hint *ngIf="submitted && f.password.errors">Enter your password</mat-hint>
             </mat-form-field>
             <button mat-button color="primary" (click)="login()">Login</button>
             <div>
@@ -33,38 +32,56 @@
              </div>
           </mat-tab>
           <mat-tab label="Register">
-            <mat-form-field appearance="outline">
-              <mat-label>FullName</mat-label>
-              <input type="email" matInput placeholder="FullName" value="" [(ngModel)]="remail">
-              <mat-icon matSuffix>full</mat-icon>
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Email</mat-label>
-              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="remail">
-              <mat-icon matSuffix>email</mat-icon>
-            </mat-form-field>
+            <div [formGroup]="registerForm">
   
-            <mat-form-field appearance="outline">
-              <mat-label>Password</mat-label>
-              <input type="password" matInput placeholder="Password" [(ngModel)]="rpassword">
-              <button mat-icon-button matSuffix (click)="hide = !hide"[attr.aria-label]="'Hide password'"[attr.aria-pressed]="hide">
-                <mat-icon style="color:black;" matSuffix>{{hide ? "visibility_off" : "visibility"}}</mat-icon>
-              </button>
+              <div class="fullname">
+                <p>Full Name</p>
+                <mat-form-field appearance="outline" class="noWrapper" >
+                  <input matInput placeholder="" formControlName="fullname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fullname.errors }"/>
+                  <mat-hint *ngIf="submitted && f.fullname.errors">Enter your full name</mat-hint>
+                </mat-form-field>
+              </div>
+              <div class="emailId">
+                <p>Email Id</p>
+                <mat-form-field appearance="outline" class="noWrapper" >
+                  <input matInput placeholder="" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"/>
+                  <mat-hint *ngIf="submitted && f.email.errors">Enter your email id</mat-hint>
+                </mat-form-field>
+              </div>
+              <div class="password-container">
+                <p>Password</p>
+                <mat-form-field appearance="outline">
+                  <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+                  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-hint *ngIf="submitted && f.password.errors">Enter your password</mat-hint>
+                </mat-form-field>
+              </div>
+              <div class="mobilenumber">
+                <p>Mobile Number</p>
+                <mat-form-field appearance="outline" class="noWrapper" >
+                  <input matInput placeholder="" formControlName="mobile" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }"/>
+                  <mat-hint *ngIf="submitted && f.mobile.errors">Enter your mobile number</mat-hint>
+                </mat-form-field>
+              </div>
+              <div class="button">
+                <button mat-flat-button class="buttonSignup" (click)=submit()>Signup</button>
+              </div>
+              </div>
+          <mat-radio-group aria-label="Select an option" fxLayoutGap="10%" [(ngModel)]="radioval">
+              <mat-radio-button value="3">customer</mat-radio-button>
+              <mat-radio-button value="2">Admin</mat-radio-button>
+          </mat-radio-group>
+          <div fxFlexAlign="end" fxLayoutGap="25px">
               
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-              <mat-label>Mobile Number</mat-label>
-              <input type="password" matInput placeholder="Password" [(ngModel)]="rcpassword">
-              
-            </mat-form-field>
-            <button mat-button color="primary" (click)="register()">Register</button>
+              <button mat-raised-button mattooltip="Register" class="regbutton" (click)="onRegister()">Register</button>
+          </div>
           </mat-tab>
         </mat-tab-group>
         <!-- <div>
           <button mat-button  [routerLink]="['/forgotpassword']">forgot password?</button>
          
          </div> -->
-  
+
       </mat-card-content>
   
     </mat-card>

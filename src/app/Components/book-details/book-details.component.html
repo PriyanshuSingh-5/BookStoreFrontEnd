@@ -1,45 +1,83 @@
 <div class="container">
-    <div class="book-image-container">
-      <div class="book-image">
-        <img src="../../../assets/Book1.png" alt="">
-        <div class="book-details-container">
-            <div class="book-description">
-              <h2>Bookname</h2>
-              <a> Bookauthor</a>
-              <div class="rating-container" fxLayout="row">
-                <div class="rating" fxLayout="row" fxLayoutAlign="center center">
-                  <span>BookRating</span> 
-                  <div class="star-container" fxLayoutAlign="center center">
-                    <mat-icon class="star">star</mat-icon>
-                  </div>
-                </div>
-      </div>
-        <div class="action-buttons">
-            <button mat-button color="primary"  (click)=NotifyMe()>Notify me</button>
-            <button mat-button color="primary" class="wishlist"  (click)=AddToWishlist()>
-            
-              <mat-icon>favorite</mat-icon>
-              WISHLIST
-            </button>
-            <!-- <div class="book-details-container">
-                <div class="book-description">
-                  <h2>Bookname</h2>
-                  <a> Bookauthor</a>
-                  <div class="rating-container" fxLayout="row">
-                    <div class="rating" fxLayout="row" fxLayoutAlign="center center">
-                      <span>BookRating</span> 
-                      <div class="star-container" fxLayoutAlign="center center">
-                        <mat-icon class="star">star</mat-icon>
-                      </div>
-                    </div>
-          </div> -->
-          <!-- <div class="separater">
-        </div>
-        <div class="book-details">
-          <div class="book-details-info" fxLayout="row">
-            <div class="dot"></div><p> Book Detail</p>
+  <div class="bookcontainer">
+    <div class="book-image">
+      <img src="../../../assets/book2.jpg" class="book" alt="">
+    </div>
+    <div class="Buttons">
+      <button mat-stroked-button class="addtobag" (click)=AddToBag()>ADD TO BAG</button>
+      <button mat-stroked-button class="addtowishlist" (click)=AddToWishlist()>
+        <mat-icon>favorite</mat-icon>WISHLIST</button>
+    </div>
+  </div>
+  <div class="bookDetails">
+    <div class="bookdescription">
+      <h2>Bookname</h2>
+      <p>by Bookauthor</p>
+      <div class="ratingcontainer" fxLayout="row">
+        <div class="rating" fxLayout="row" fxLayoutAlign="center center">
+          <span>4.5</span> 
+          <div class="starcontainer" fxLayoutAlign="center center">
+            <mat-icon class="star">star</mat-icon>
           </div>
         </div>
-      </div> -->
+       
       </div>
+      <div class="pricecontainer" fxLayout="row">
+       
+        <div class="price">
+          Rs. Bookprice
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <mat-divider></mat-divider>
+    </div>
+    <div class="book-details">
+      <div class="bookinfo" fxLayout="row">
+        <div class="dot"></div><p> Book Detail</p>
+      </div>
+      <div class="book-para">
+        The Vanishing Half follows the lives of two twin girls, both light-skinned Black girls, who run away from home at the age of sixteen. Desiree marries a dark-skinned Black man and has a child, while Stella lives her life passing as white.
+      </div>
+    </div>
+    <div class="divider">
+      <mat-divider></mat-divider>
+    </div>
+    <div class="customerfeedback">
+      <h2>Customer Feedback</h2>
+      <div class="ratingcontainer">
+        <h3>Overall Rating</h3>
+        <div class="cont">
+          <div class="stars">
+            <button mat-icon-button [color]="color" *ngFor="let ratingId of ratingArr;index as i" [id]="'star_'+i" (click)="onClick(i+1)"  >
+              <mat-icon>
+                {{showIcon(i)}}
+              </mat-icon>
+            </button>
+            <p class="body-2">
+                Your rated <span class="body-2"></span> / <span class="body-2"></span>
+            </p>
+            
+          </div>
+          <div>Rating: </div>
+        </div>
+        <textarea matInput class="textbox"></textarea>
+        <button mat-raised-button class="submit-button" >Submit</button>
+      </div>
+       
+      <div class="customerratings">
+        <div class="profile-circle-container">
+          <div class="profile-circle">
+            AC
+          </div>
+        </div>
+        <div class="ratingcontent">
+          <h2>Priyanshu</h2>
+          <p>review</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- </div> -->
 

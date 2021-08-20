@@ -1,49 +1,73 @@
-<p>bookdisplay works!</p>
-<div class="book-container">
-    <div class="books-menu" fxLayout="row wrap" fxLayoutAlign="space-between center"  >
-      <div><span class="books">Books<span class="NBooks" >BookQuanity</span></span></div>
+<div class="container">
+    <div class="booksList"  >
+      <!-- <div><h2>Books</h2></div> -->
       <div class="sort">
-          <mat-form-field appearance="outline" >
-          <select matNativeControl fxLayoutAlign="center center">
-             
-              <option value="L2H">Price: Low to High</option>
-              <option value="H2L">Price: High to Low</option>
-              <option value="NA">Newest Arrivals</option>
-          </select>
-          </mat-form-field>
+        <div class="heading"><h1>Books</h1></div>
+        <mat-form-field appearance="outline" class="sorting">
+          <mat-label>Sort by</mat-label>
+          <mat-select>
+            <mat-option value="LH">Low-to-high</mat-option>
+            <mat-option value="HL">High-to-low</mat-option>
+            <mat-option value="New arrival">New Arrival</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
     </div>
-    <div class="all-books-container">
-      <div class="all-books" >
+    <!-- <div><h2>Books</h2></div> -->
+    <!-- <div class="bookscontainer"> -->
+      
+      <!-- <div class="bookDetails" > -->
         <div class="book" >
-          <div class="book-image">
-            <img src="../../../assets/Book1.png" alt="">
+          <div class="image">
+            <img src="../../../assets/Book1.png" class="books" alt="">
           </div>
-          <div class="book-description">
+          <div class="bookDescription">
             <h2>Bookname</h2>
             <p>by Bookauthor</p>
-            <div class="rating-container" fxLayout="row">
-              <div class="rating" fxLayout="row" fxLayoutAlign="center center">
-               BookaverageRating <mat-icon class="star" fxFlexAlign="center">star</mat-icon>
+            <div class="ratingContainer" >
+              <div class="rating" >
+              4.0<mat-icon class="star" >star</mat-icon>
               </div>
-              <div class="no-of-people-rated">
-               PeopleRated
+             
+            </div>
+            <div class="pricecontainer" >
+              
+              <div class="price">
+                Rs.Bookprice
               </div>
             </div>
-            <div class="price-container" fxLayout="row">
-              <div class="dicounted-price">
-                <b>Rs. BookdiscountPrice</b>
+          </div>
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+    
+    
+      <!-- <div class="bookDetails" > -->
+        <div class="book" >
+          <div class="image">
+            <img src="../../../assets/Book2.png" class="books" alt="">
+          </div>
+          <div class="bookDescription">
+            <h2>Bookname</h2>
+            <p>by Bookauthor</p>
+            <div class="ratingContainer">
+              <div class="rating" >
+              4.0<mat-icon class="star" >star</mat-icon>
               </div>
-              <div class="actual-price">
+             
+            </div>
+            <div class="pricecontainer" >
+              
+              <div class="price">
                 Rs.Bookprice
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+   
     
     
-  </div>
+  <!-- </div> -->
   
   

@@ -39,6 +39,7 @@ import { OrdersComponent } from './Components/orders/orders.component';
 import { WishlistComponent } from './Components/wishlist/wishlist.component';
 import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
 import { MatSelectModule } from '@angular/material/select';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { MatSelectModule } from '@angular/material/select';
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
@@ -81,7 +82,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatSnackBarModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
